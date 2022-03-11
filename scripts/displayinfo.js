@@ -18,8 +18,8 @@ const petSalon={
     },
     pets:[]
 }
-console.log(petSalon.address.zip);
-console.log(petSalon.pets.length);
+// console.log(petSalon.address.zip);
+// console.log(petSalon.pets.length);
 // console.log(petSalon.pets[0].service);
 //create pets array
 
@@ -31,21 +31,23 @@ function displaySalonInfo(){
 
 // displaySalonInfo();
 
-// alert(`There are ${petSalon.pets.length} registered pets at the Salon`);
 
-// let x=0;
-// let petNames = `${petSalon.pets[x].name}`;
-// console.log(petNames); 
+//assignment 1 FSDI 104
+alert(`There are ${petSalon.pets.length} registered pets at the Salon`);
 
-// function displayPetNames(){
+let x=0;
+let petNames = `${petSalon.pets[x].name}`;
+console.log(petNames); 
+
+function displayPetNames(){
    
-//     for (x=0;x<=5;x++){
-//     return petNames;
-//     }
-// }
+    for (x=0;x<=5;x++){
+    return petNames;
+    }
+}
 
-// displayPetNames();
+displayPetNames();
 
-
+//end of assignment 1
 
 
