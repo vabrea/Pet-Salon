@@ -16,31 +16,11 @@ const petSalon={
         open:"9:00am",
         close:"5:00pm"
     },
-    pets:[
-        {//first pet
-            name:"scooby",
-            age:50,
-            gender:"Male",
-            breed:"Dane",
-            service:"grooming",
-            ownderName:"Shaggy",
-            contactPhone:"111-111-111"
-
-        },
-        {
-            name:"scooby",
-            age:50,
-            gender:"Male",
-            breed:"Dane",
-            service:"grooming",
-            ownderName:"Shaggy",
-            contactPhone:"111-111-111"
-        },
-    ]
+    pets:[]
 }
 console.log(petSalon.address.zip);
 console.log(petSalon.pets.length);
-console.log(petSalon.pets[0].service);
+// console.log(petSalon.pets[0].service);
 //create pets array
 
 //display the pet salon info in the fotter section of HTML
@@ -49,7 +29,23 @@ function displaySalonInfo(){
     document.getElementById("footer-info").innerHTML=`Welcome to ${petSalon.name} located in ${petSalon.address.city}`;
 };
 
-displaySalonInfo();
-function displayPetNames(){
-    
-}
+// displaySalonInfo();
+
+// alert(`There are ${petSalon.pets.length} registered pets at the Salon`);
+
+// let x=0;
+// let petNames = `${petSalon.pets[x].name}`;
+// console.log(petNames); 
+
+// function displayPetNames(){
+   
+//     for (x=0;x<=5;x++){
+//     return petNames;
+//     }
+// }
+
+// displayPetNames();
+
+
+
+
