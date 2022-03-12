@@ -4,30 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fancy Pets</title>
+    <link rel="stylesheet" href="styles/mystyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Oswald:wght@200;300;500&display=swap" rel="stylesheet">
+    <title>The Groom Room</title>
 </head>
 <body>
+    <nav class="nav-bar">
+        <a href="index.html"><img src="images/navlogo.jpeg"></a>
+        <div class="nav-links">
+            <a href="register.html">Register</a>
+            <a href="#">Services</a>
+        </div>
+    </nav>
     <header>
-        <h1>Fancy Pets</h1>
+        <h1>The Groom Room</h1>
     </header>
 
     <main>
         <h2>Register a new Pet</h2>
-        <div>
+        <p>Please enter in your Pet's information below</p>
+        <div class="reg-inputs">
             <input 
                 type="text"
                 id="txtPetsName"
                 placeholder="Enter your Pet's Name">
+            <br>
             <input
                 type="number"
                 id="txtPetsAge"
                 placeholder="Enter Age">
+            <br>
             <input
                 type="text"
                 id="txtPetsGender"
                 placeholder="Gender">
+            <br>
+            <input
+                type="text"
+                id="txtPetsBreed"
+                placeholder="Breed">
+            <br>
+            <input
+                type="text"
+                id="txtPetsService"
+                placeholder="Type of Service">
+            <br>
+            <input
+                type="text"
+                id="txtPetsOwner"
+                placeholder="Owner's Name">
+            <br>
+            <input
+                type="text"
+                id="txtPetsOwnerNumber"
+                placeholder="Enter Phone">
+            <br>
+            <button onclick="register();">Register</button>
         </div>
-        <button onclick="register();">Add</button>
+        
     </main>
 
     <footer>

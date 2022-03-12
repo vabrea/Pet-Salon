@@ -22,18 +22,13 @@ const petSalon={
 
 // console.log(petSalon.pets);
 
-
-//assignment 2
-//error on register.html disregard
 function displaySalonInfo(){
     document.getElementById("salon-info").innerHTML=`
     Hello and welcome all pets! 
     <br>
-    We are located at ${petSalon.address.number} ${petSalon.address.street} ${petSalon.address.city}, ${petSalon.address.state} ${petSalon.address.zip}
+    We are located at ${petSalon.address.number} ${petSalon.address.street} ${petSalon.address.city} ${petSalon.address.state} ${petSalon.address.zip}
     <br>
     Please use the Registration form for appointments and services.`
 };
 
 displaySalonInfo();
-
-//end of assignment 2

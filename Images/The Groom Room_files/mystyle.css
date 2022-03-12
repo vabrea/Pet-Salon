@@ -58,14 +58,10 @@ header h1{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     max-width: 95%;
     font-size: 50px;
     letter-spacing: 3px;
-}
-
-main{
-    height: 70vh;
 }
 
 main h2{
@@ -80,10 +76,6 @@ main p{
     text-align: center;
     margin-bottom: 10px;
 
-}
-
-#salon-info{
-    text-align: center;
 }
 
 /* registration inputs */
@@ -110,11 +102,4 @@ main p{
 
 .reg-inputs button:hover{
     text-decoration: underline;
-}
-
-/* footer */
-footer{
-    background-color: black;
-    color: white;
-    height: 100px;
 }
