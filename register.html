@@ -15,8 +15,9 @@
     <nav class="nav-bar">
         <a href="index.html"><img src="images/navlogo.jpeg"></a>
         <div class="nav-links">
+            <a href="index.html">Home</a>
             <a href="register.html">Register</a>
-            <a href="#">Services</a>
+            <a href="services.html">Services</a>
         </div>
     </nav>
     <header>
@@ -27,6 +28,14 @@
         <h2>Register a new Pet</h2>
         <p>Please enter in your Pet's information below</p>
         <div class="reg-inputs">
+            <div class="mb-3"> 
+                <select name="Select Pet Type" id="txtPetsType" class="dropdown">
+                    <option value="" disabled selected>Select Pet Type...</option>
+                    <option value="Dog">Dog</option>
+                    <option value="Cat">Cat</option>
+                    <option value="Bird">Bird</option>>  
+                </select>
+            </div>
            <div class="mb-3">
                 <input 
                     type="text"
@@ -51,12 +60,14 @@
                     id="txtPetsBreed"
                     placeholder="Breed">    
             </div>           
-            <div class="mb-3">
-                <input
-                    type="text"
-                    id="txtPetsService"
-                    placeholder="Type of Service">    
-            </div>           
+            <div class="mb-3"> 
+                <select name="Service Type" id="txtPetsService" class="dropdown">
+                    <option value="" disabled selected>Type of Service</option>
+                    <option value="Haircut">Haircut</option>
+                    <option value="Bath">Bath</option>
+                    <option value="Full Service">Full Service</option>>  
+                </select>
+            </div>         
             <div class="mb-3">
                 <input
                     type="text"
@@ -75,7 +86,7 @@
         </div>
         
     </main>
-    <div id="total">
+    <!-- <div id="total">
         Total = 3
     </div>
     <div id="dogs">
@@ -90,7 +101,37 @@
         <div class="pets-container" id="pets">
         <!--the pets will be displayed here-->
 
+    </div> -->
+
+    <div class="type-count">
+        <div class="dog-count">
+
         </div>
+    </div>
+
+    <div class="container">
+        <input class="form-control" id="txtSearch"
+            type="search">
+            <button onclick="searchPet();" class="btn btn-primary">Search 
+            </button>
+    </div>
+
+    <table class="table">
+        <tr class="tr-header">
+            <th>Pet Type</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Breed</th>
+            <th>Service</th>
+            <th>Owner</th>
+            <th>Owner Phone</th>
+        </tr>
+        <tbody class="" id="pets-table">
+
+        </tbody>
+    </table>
+
     <footer>
 
     </footer>
